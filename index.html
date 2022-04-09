@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy-festival</title>
+    <link rel="stylesheet" href="happy.css">
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+         .labels{
+            font-family: 'Lobster', cursive;
+         }
+
+        button{
+            height:50px;
+            width:80px;
+            text:alighn:center;
+
+        }
+       input{
+        font-style:oblique;
+        font-weight:bold;
+        font-size:1.3em;
+        color:yellow;
+        background:yellow;
+        letter-spacing:2px;
+       }
+       script{
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        }
+       .polling_message {
+  color: white;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    margin-right: -50%;
+    padding:-0.1em;
+    top:20%;
+    position: fixed;
+
+
+
+}
+
+.view_port {
+  background-color: black;
+  height: 40px;
+  width: 300px;
+  overflow: hidden;
+  margin:0px 0px 0px 100px;
+  opacity:0.8;
+}
+
+.cylon_eye {
+  background-color: red;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, .9) 25%,
+      rgba(0, 0, 0, .1) 50%,
+      rgba(0, 0, 0, .9) 75%);
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+          animation: 4s linear 0s infinite alternate move_eye;
+}
+
+@-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+
+      .labels{
+        animation-duration: 7s;
+         animation-name: slidein;
+         animation-iteration-count: infinite;
+
+        }
+             @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+    </style>
+
+       </head>
+<body>
+
+     <div class="section">
+
+        <video autoplay loop muted id=video.mp4"">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+   <div class ="content">
+       <h1 style="color: blue; font-style:oblique; font-weight:800;font-size:3em; "><a href="" class="heading">Happy Sinhala & Tamil New Year</a> </h1>
+       <div class="view_port">
+  <div class="polling_message">
+      <h2>Welcome To My Website!</h2>
+  </div>
+  <div class="cylon_eye"></div>
+</div>
+
+       <h2 style="color:orange;" class="labels">HI! FREINDS PLEASE ENTER YOUR NAME:</h2>
+           <input id="username" style="color:yellow; font-style:oblique; width:400px; height:50px;font-weight:3em;margin:0px 0px 0px 350px;">
+
+       <button onclick="myfunction()"><h3 style="color:blue; font-style:oblique; letter-spacing:2px;">Submit</h3></button>
+  <h2 id = "msg" > </h2>
+
+  <script>
+      function myfunction(){
+        let username= document.querySelector("#username");
+        let msg= document.querySelector("#msg");
+         msg.innerHTML="<span style='color:SaddleBrown; font-family:'Merienda', cursive;'>Happy Sinhala & Tamil New Year ," +"<span style='color:Lime;'>"+ username.value+"</span>"+"!!"+"<br>"+"On the Tamil New Year, wish you be showered with the Divine blessings…of happiness and prosperity"+"<br>"+"Every end is a new beginning. Keep your spirits unshaken and you shall always walk on the path to glory"+"<br>"+"So, "+"<span style='color: Lime;'>"+username.value+"</span>"+" Celebrate life and find a reason to smile at every turn… although there are many crisis in our country"+"<br>"+"Go ahead & fullfill your dreams"+"<br>"+"Iwish you all the best ,"+"<span style='color: Lime;'>"+username.value+"</span>"+"!!"+"<br>"+"<br>"+"<span style='color:DeepSkyBlue;'>" +" I can’t change the direction of the wind, but I can adjust my sails to always reach my destination. –</span>"+"<span style='color: red;'> *Jimmy Dean*"+"</span>"+"<br>"+"<br>"+"<br>"+"                                                        ~your freind,Shashini Sanjana~</span>";
+      }
+
+  </script>
+
+
+   </div>
+
+</body>
+</html>

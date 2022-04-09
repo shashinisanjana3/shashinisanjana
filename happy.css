@@ -1,0 +1,43 @@
+video.mp4{
+  position: fixed;
+  right: 0;
+  bottom:0;
+ 
+  
+  min-width: 100%;
+  min-height: 100%;
+  overflow:hidden;
+}
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  top: 0;
+  left:0;
+ 
+   color:white
+  mix-blend-mode:overlay;
+  width: 100%;
+  padding: 20px;
+
+}
+
+.heading{
+	
+	text-decoration:none;
+        text-align:center;
+        margin:0px 0px 0px  390px;
+        border: 1 px;
+        background:yellow;
+        padding:4px;
+        transform:rotate(360 deg);
+        opacity:0.8;
+        
+
+}
+.heading:hover{
+        color:red;
+
+}
+body{
+	overflow:hidden;
+}
